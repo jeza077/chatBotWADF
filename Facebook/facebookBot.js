@@ -335,12 +335,12 @@ async function getUserData(senderId) {
 }
 
 async function sendTextMessage(recipientId, text) {
-  if (text.includes("{first_name}") || text.includes("{last_name}")) {
-    let userData = await getUserData(recipientId);
-    text = text
-      .replace("{first_name}", userData.first_name)
-      .replace("{last_name}", userData.last_name);
-  }
+  // if (text.includes("{first_name}") || text.includes("{last_name}")) {
+  //   let userData = await getUserData(recipientId);
+  //   text = text
+  //     .replace("{first_name}", userData.first_name)
+  //     .replace("{last_name}", userData.last_name);
+  // }
   var messageData = {
     recipient: {
       id: recipientId,
