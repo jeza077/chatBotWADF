@@ -1,7 +1,7 @@
 module.exports = {
   //WA App credentials
   // WA_PAGE_TOKEN: "123",
-  // WA_VERIFY_TOKEN: "123",
+  WA_VERIFY_TOKEN: "jeza077.",
   // WA_APP_SECRET: "123",
   //Google project credentials
   GOOGLE_PROJECT_ID: "pruebaapp-ybsj",

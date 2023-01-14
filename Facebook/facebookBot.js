@@ -38,8 +38,7 @@ const sessionIds = new Map();
 router.get("/webhook/", function (req, res) {
   if (
     req.query["hub.mode"] === "subscribe" &&
-    req.query["hub.verify_token"] === process.env.TOKEN_WA
-    // req.query["hub.verify_token"] === config.FB_VERIFY_TOKEN
+    req.query["hub.verify_token"] === config.WA_VERIFY_TOKEN
   ) {
     res.status(200).send(req.query["hub.challenge"]);
   } else {
